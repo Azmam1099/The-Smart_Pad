@@ -59,14 +59,22 @@ PRODUCTS = [
 st.image(
     # This is the corrected "RAW" link
     "https://raw.githubusercontent.com/Azmam1099/The-Smart_Pad/8ffea45bad2d08b33d15163d9e6bbf9b11ba833e/The%20Smart%20Pad.png",
-    width=150  # Adjust width as needed
+    width=250  # Increased logo width
 )
+
+# with title_col:
+# st.title("The Smart Pad") # Removed title
+# st.write(
+#     """
+#         Explore the viral most trending products for Home and Garden
+#         """
+#     ) # Removed description
 
 # Add a banner image (optional)
 st.image(
     # This is the corrected "RAW" link
     "https://raw.githubusercontent.com/Azmam1099/The-Smart_Pad/8ffea45bad2d08b33d15163d9e6bbf9b11ba833e/White%20Black%20Cute%20Minimalist%20and%20Elegant%20Toys%20Review%20Banner.png",
-    use_column_width=True
+    width=800 # Set a fixed width to make it smaller
 )
 
 # It's important to have an affiliate disclosure!
