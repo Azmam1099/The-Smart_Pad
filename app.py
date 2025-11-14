@@ -1,16 +1,12 @@
 import streamlit as st
 
-# --- PAGE CONFIGURATION ---
-# This must be the first Streamlit command.
 st.set_page_config(
-    page_title="The Smart Pad",  # Corrected typo
+    page_title="The Smart Pad", 
     page_icon="🛍️",
-    layout="wide"  # Use "wide" layout for a grid
+    layout="wide" 
 )
 
 # --- PRODUCT DATA ---
-# A list of dictionaries. Each dictionary is a product.
-# This is the ONLY section you need to edit to add/change products.
 PRODUCTS = [
     {
         "title": "COB Keychain Light",
@@ -50,41 +46,31 @@ PRODUCTS = [
     }
 ]
 
-# --- HEADER SECTION ---
-# Create columns for logo and title
-# logo_col, title_col = st.columns([1, 4]) # Logo column is 1/5, title is 4/5
 
-# with logo_col:
-    # Add your logo here.
-st.image(
-    # This is the corrected "RAW" link
-    "https://raw.githubusercontent.com/Azmam1099/The-Smart_Pad/8ffea45bad2d08b33d15163d9e6bbf9b11ba833e/The%20Smart%20Pad.png",
-    width=250  # Increased logo width
-)
+# --- HEADER ---
+logo_col, banner_col = st.columns([1, 3]) # Logo gets 1/4, banner gets 3/4 of space
 
-# with title_col:
-# st.title("The Smart Pad") # Removed title
-# st.write(
-#     """
-#         Explore the viral most trending products for Home and Garden
-#         """
-#     ) # Removed description
+with logo_col:
+    st.image(
+        
+        "https://raw.githubusercontent.com/Azmam1099/The-Smart_Pad/8ffea45bad2d08b33d15163d9e6bbf9b11ba833e/The%20Smart%20Pad.png",
+        use_column_width=True  
+    )
 
-# Add a banner image (optional)
-st.image(
-    # This is the corrected "RAW" link
-    "https://raw.githubusercontent.com/Azmam1099/The-Smart_Pad/8ffea45bad2d08b33d15163d9e6bbf9b11ba833e/White%20Black%20Cute%20Minimalist%20and%20Elegant%20Toys%20Review%20Banner.png",
-    width=800 # Set a fixed width to make it smaller
-)
+# Banner image 
+with banner_col:
+    st.image(
+       
+        "https://raw.githubusercontent.com/Azmam1099/The-Smart_Pad/8ffea45bad2d08b33d15163d9e6bbf9b11ba833e/White%20Black%20Cute%20Minimalist%20and%20Elegant%20Toys%20Review%20Banner.png",
+        use_column_width=True
+    )
 
-# It's important to have an affiliate disclosure!
-#st.caption("As an affiliate, I may earn a commission from qualifying purchases. This helps support my content!")
+
 
 st.markdown("---")
 
 # --- PRODUCT GRID ---
-# Define the number of columns you want in your grid.
-# The Beebom site uses 3 columns on a wide screen.
+
 num_columns = 3
 cols = st.columns(num_columns)
 
@@ -106,5 +92,5 @@ for i, product in enumerate(PRODUCTS):
             )
 
 st.markdown("---")
-# Also added a footer caption
+# footer caption
 st.caption("© 2025 The Smart Pad | All products recommended are based on personal use and research.")
