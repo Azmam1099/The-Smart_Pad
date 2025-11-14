@@ -3,7 +3,7 @@ import streamlit as st
 # --- PAGE CONFIGURATION ---
 # This must be the first Streamlit command.
 st.set_page_config(
-    page_title="The Samrt Pad",
+    page_title="The Smart Pad",  # Corrected typo
     page_icon="🛍️",
     layout="wide"  # Use "wide" layout for a grid
 )
@@ -57,12 +57,13 @@ logo_col, title_col = st.columns([1, 4]) # Logo column is 1/5, title is 4/5
 with logo_col:
     # Add your logo here.
     st.image(
-        "https://github.com/Azmam1099/The-Smart_Pad/blob/8ffea45bad2d08b33d15163d9e6bbf9b11ba833e/The%20Smart%20Pad.png", # <-- PASTE YOUR LOGO URL HERE
+        # This is the corrected "RAW" link
+        "https://raw.githubusercontent.com/Azmam1099/The-Smart_Pad/8ffea45bad2d08b33d15163d9e6bbf9b11ba833e/The%20Smart%20Pad.png",
         width=150  # Adjust width as needed
     )
 
 with title_col:
-    st.title("My Favorite Gadgets")
+    st.title("The Smart Pad") # Changed title to match page title
     st.write(
         """
         Explore the viral most trending products for Home and Garden
@@ -70,11 +71,13 @@ with title_col:
     )
 
 # Add a banner image (optional)
-# Uncomment the line below and replace the URL to add a big graphic banner
 st.image(
-    "https://github.com/Azmam1099/The-Smart_Pad/blob/8ffea45bad2d08b33d15163d9e6bbf9b11ba833e/White%20Black%20Cute%20Minimalist%20and%20Elegant%20Toys%20Review%20Banner.png", # <-- PASTE YOUR BANNER URL HERE
+    # This is the corrected "RAW" link
+    "https://raw.githubusercontent.com/Azmam1099/The-Smart_Pad/8ffea45bad2d08b33d15163d9e6bbf9b11ba833e/White%20Black%20Cute%20Minimalist%20and%20Elegant%20Toys%20Review%20Banner.png",
     use_column_width=True
 )
+
+# It's important to have an affiliate disclosure!
 #st.caption("As an affiliate, I may earn a commission from qualifying purchases. This helps support my content!")
 
 st.markdown("---")
@@ -103,4 +106,5 @@ for i, product in enumerate(PRODUCTS):
             )
 
 st.markdown("---")
-#st.caption("© 2025 Your Name Here | All products recommended are based on personal use and research.")
+# Also added a footer caption
+st.caption("© 2025 The Smart Pad | All products recommended are based on personal use and research.")
