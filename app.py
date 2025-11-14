@@ -57,7 +57,7 @@ logo_col, title_col = st.columns([1, 4]) # Logo column is 1/5, title is 4/5
 with logo_col:
     # Add your logo here.
     st.image(
-        "https://raw.githubusercontent.com/YourUsername/YourRepo/main/logo.png", # <-- PASTE YOUR LOGO URL HERE
+        "https://github.com/Azmam1099/The-Smart_Pad/blob/8ffea45bad2d08b33d15163d9e6bbf9b11ba833e/The%20Smart%20Pad.png", # <-- PASTE YOUR LOGO URL HERE
         width=150  # Adjust width as needed
     )
 
@@ -72,7 +72,7 @@ with title_col:
 # Add a banner image (optional)
 # Uncomment the line below and replace the URL to add a big graphic banner
 st.image(
-    "https://raw.githubusercontent.com/YourUsername/YourRepo/main/banner.jpg", # <-- PASTE YOUR BANNER URL HERE
+    "https://github.com/Azmam1099/The-Smart_Pad/blob/8ffea45bad2d08b33d15163d9e6bbf9b11ba833e/White%20Black%20Cute%20Minimalist%20and%20Elegant%20Toys%20Review%20Banner.png", # <-- PASTE YOUR BANNER URL HERE
     use_column_width=True
 )
 #st.caption("As an affiliate, I may earn a commission from qualifying purchases. This helps support my content!")
