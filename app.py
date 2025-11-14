@@ -52,14 +52,22 @@ PRODUCTS = [
 
 # --- HEADER SECTION ---
 # Create columns for logo and title
-#logo_col, title_col = st.columns([1, 4]) # Logo column is 1/5, title is 4/5
+# logo_col, title_col = st.columns([1, 4]) # Logo column is 1/5, title is 4/5
 
-with logo_col:
+# with logo_col:
     # Add your logo here.
-    st.image(
-        # This is the corrected "RAW" link
-        "https://raw.githubusercontent.com/Azmam1099/The-Smart_Pad/8ffea45bad2d08b33d15163d9e6bbf9b11ba833e/The%20Smart%20Pad.png",
-        width=150  # Adjust width as needed
+st.image(
+    # This is the corrected "RAW" link
+    "https://raw.githubusercontent.com/Azmam1099/The-Smart_Pad/8ffea45bad2d08b33d15163d9e6bbf9b11ba833e/The%20Smart%20Pad.png",
+    width=150  # Adjust width as needed
+)
+
+# with title_col:
+st.title("The Smart Pad") # Changed title to match page title
+st.write(
+    """
+        Explore the viral most trending products for Home and Garden
+        """
     )
 
 # Add a banner image (optional)
