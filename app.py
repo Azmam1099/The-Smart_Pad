@@ -48,7 +48,7 @@ PRODUCTS = [
 
 
 # --- HEADER ---
-logo_col, banner_col = st.columns([1, 3]) # Logo gets 1/4, banner gets 3/4 of space
+logo_col, banner_col = st.columns([1, 5]) 
 
 with logo_col:
     st.image(
