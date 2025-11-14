@@ -3,7 +3,7 @@ import streamlit as st
 # --- PAGE CONFIGURATION ---
 # This must be the first Streamlit command.
 st.set_page_config(
-    page_title="The Smart Pad",
+    page_title="The Samrt Pad",
     page_icon="🛍️",
     layout="wide"  # Use "wide" layout for a grid
 )
@@ -51,15 +51,31 @@ PRODUCTS = [
 ]
 
 # --- HEADER SECTION ---
-# Add a banner image (optional)
-# st.image("https://placehold.co/1200x300/333333/eeeeee?text=My+Gadget+Store", use_column_width=True)
+# Create columns for logo and title
+logo_col, title_col = st.columns([1, 4]) # Logo column is 1/5, title is 4/5
 
-st.title("The Viral Products")
-st.write(
-    """
-    Explore the viral most trending products for Home and Garden
-    """
-)
+with logo_col:
+    # Add your logo here.
+    # You can upload a logo to your GitHub repo and use the relative path,
+    # or use a URL.
+    st.image(
+        "https://www.canva.com/design/DAG4tVcfdcI/h6WnPrYRymXeKGEZvkMBxg/view?utm_content=DAG4tVcfdcI&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h6ab66cda6c", # Replace with your logo image URL
+        width=150  # Adjust width as needed
+    )
+
+with title_col:
+    st.title("My Favorite Gadgets")
+    st.write(
+        """
+        Explore the viral most trending products for Home and Garden
+        """
+    )
+
+# Add a banner image (optional)
+# Uncomment the line below and replace the URL to add a big graphic banner
+st.image("https://www.canva.com/design/DAG4teEU_uw/JrkD_2Xemc6etXKUAKycUg/view?utm_content=DAG4teEU_uw&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hf0c5b10e72", use_column_width=True)
+
+
 #st.caption("As an affiliate, I may earn a commission from qualifying purchases. This helps support my content!")
 
 st.markdown("---")
@@ -88,4 +104,4 @@ for i, product in enumerate(PRODUCTS):
             )
 
 st.markdown("---")
-st.caption("© 2025 Your Name Here | All products recommended are based on personal use and research.")
+#st.caption("© 2025 Your Name Here | All products recommended are based on personal use and research.")
