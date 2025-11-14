@@ -47,19 +47,21 @@ PRODUCTS = [
     },
 ]
 
-# -------------------- CUSTOM CSS (Beebom-Style) --------------------
+# -------------------- CUSTOM CSS --------------------
 st.markdown("""
 <style>
-
-body {
-    background-color: #ffffff;
+/* Center logo */
+.center-logo {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
 }
 
-/* Page container spacing */
-.block-container {
-    padding-top: 1.5rem;
-    padding-left: 2rem;
-    padding-right: 2rem;
+/* Make banner short height */
+.banner-container img {
+    max-height: 170px !important;
+    object-fit: cover;
+    border-radius: 12px;
 }
 
 /* Product Card */
@@ -77,7 +79,6 @@ body {
     box-shadow: 0 6px 20px rgba(0,0,0,0.08);
 }
 
-/* Titles */
 .product-title {
     font-size: 1.15rem;
     font-weight: 600;
@@ -102,21 +103,31 @@ body {
     font-weight: 600;
     border: 1px solid #e0e0e0;
 }
-
 </style>
 """, unsafe_allow_html=True)
 
 # -------------------- HEADER --------------------
+
+# LOGO centered
+st.markdown('<div class="center-logo">', unsafe_allow_html=True)
 st.image(
-    # This is the corrected "RAW" link
-    "https://raw.githubusercontent.com/Azmam1099/The-Smart_Pad/8ffea45bad2d08b33d15163d9e6bbf9b11ba833e/White%20Black%20Cute%20Minimalist%20and%20Elegant%20Toys%20Review%20Banner.png",
-    width=True # Set a fixed width to make it smaller
+    "https://raw.githubusercontent.com/Azmam1099/The-Smart_Pad/8ffea45bad2d08b33d15163d9e6bbf9b11ba833e/The%20Smart%20Pad.png",
+    width=180
 )
+st.markdown('</div>', unsafe_allow_html=True)
+
+# BANNER full width but short
+st.markdown('<div class="banner-container">', unsafe_allow_html=True)
+st.image(
+    "https://raw.githubusercontent.com/Azmam1099/The-Smart_Pad/8ffea45bad2d08b33d15163d9e6bbf9b11ba833e/White%20Black%20Cute%20Minimalist%20and%20Elegant%20Toys%20Review%20Banner.png",
+    use_container_width=True
+)
+st.markdown('</div>', unsafe_allow_html=True)
 
 #st.caption("As an affiliate, I may earn a commission from qualifying purchases.")
 st.markdown("---")
 
-# -------------------- PRODUCT GRID (Beebom Style) --------------------
+# -------------------- PRODUCT GRID --------------------
 cols = st.columns(3)
 
 for index, product in enumerate(PRODUCTS):
@@ -128,11 +139,7 @@ for index, product in enumerate(PRODUCTS):
         st.markdown(f'<div class="product-title">{product["title"]}</div>', unsafe_allow_html=True)
         st.markdown(f'<div class="product-desc">{product["description"]}</div>', unsafe_allow_html=True)
 
-        st.link_button(
-            "Buy Now",
-            product["affiliate_link"],
-            use_container_width=True
-        )
+        st.link_button("Buy Now", product["affiliate_link"], use_container_width=True)
 
         st.markdown('</div>', unsafe_allow_html=True)
 
