@@ -119,7 +119,7 @@ st.markdown('</div>', unsafe_allow_html=True)
 # BANNER full width but short
 st.markdown('<div class="banner-container">', unsafe_allow_html=True)
 st.image(
-    "https://raw.githubusercontent.com/Azmam1099/The-Smart_Pad/8ffea45bad2d08b33d15163d9e6bbf9b11ba833e/White%20Black%20Cute%20Minimalist%20and%20Elegant%20Toys%20Review%20Banner.png",
+    "https://raw.githubusercontent.com//Azmam1099/The-Smart_Pad/2494d2de749541cdd11bbb12ed3d0a9fe59971d0/banner.png",
     use_container_width=True
 )
 st.markdown('</div>', unsafe_allow_html=True)
