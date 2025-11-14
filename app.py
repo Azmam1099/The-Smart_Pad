@@ -62,14 +62,6 @@ st.image(
     width=150  # Adjust width as needed
 )
 
-# with title_col:
-st.title("The Smart Pad") # Changed title to match page title
-st.write(
-    """
-        Explore the viral most trending products for Home and Garden
-        """
-    )
-
 # Add a banner image (optional)
 st.image(
     # This is the corrected "RAW" link
