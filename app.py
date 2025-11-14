@@ -54,7 +54,7 @@ with logo_col:
     st.image(
         
         "https://raw.githubusercontent.com/Azmam1099/The-Smart_Pad/8ffea45bad2d08b33d15163d9e6bbf9b11ba833e/The%20Smart%20Pad.png",
-        use_column_width=True  
+        width=100 
     )
 
 # Banner image 
