@@ -107,21 +107,13 @@ body {
 """, unsafe_allow_html=True)
 
 # -------------------- HEADER --------------------
-col_logo, col_banner = st.columns([1, 3])
-
-with col_logo:
-    st.image(
-        "https://raw.githubusercontent.com/Azmam1099/The-Smart_Pad/8ffea45bad2d08b33d15163d9e6bbf9b11ba833e/The%20Smart%20Pad.png",
-        width=150
-    )
-
 with col_banner:
     st.image(
         "https://raw.githubusercontent.com/Azmam1099/The-Smart_Pad/8ffea45bad2d08b33d15163d9e6bbf9b11ba833e/White%20Black%20Cute%20Minimalist%20and%20Elegant%20Toys%20Review%20Banner.png",
-        use_container_width=True
+        width=600
     )
 
-st.caption("As an affiliate, I may earn a commission from qualifying purchases.")
+#st.caption("As an affiliate, I may earn a commission from qualifying purchases.")
 st.markdown("---")
 
 # -------------------- PRODUCT GRID (Beebom Style) --------------------
