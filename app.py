@@ -3,7 +3,7 @@ import streamlit as st
 # --- PAGE CONFIGURATION ---
 # This must be the first Streamlit command.
 st.set_page_config(
-    page_title="My Gadget Store",
+    page_title="The Smart Pad",
     page_icon="🛍️",
     layout="wide"  # Use "wide" layout for a grid
 )
@@ -54,13 +54,13 @@ PRODUCTS = [
 # Add a banner image (optional)
 # st.image("https://placehold.co/1200x300/333333/eeeeee?text=My+Gadget+Store", use_column_width=True)
 
-st.title("My Favorite Gadgets")
+st.title("The Viral Products")
 st.write(
     """
-    Welcome! Here are some of my favorite gadgets and products that I use and recommend.
+    Explore the viral most trending products for Home and Garden
     """
 )
-st.caption("As an affiliate, I may earn a commission from qualifying purchases. This helps support my content!")
+#st.caption("As an affiliate, I may earn a commission from qualifying purchases. This helps support my content!")
 
 st.markdown("---")
 
