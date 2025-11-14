@@ -110,7 +110,7 @@ body {
 st.image(
     # This is the corrected "RAW" link
     "https://raw.githubusercontent.com/Azmam1099/The-Smart_Pad/8ffea45bad2d08b33d15163d9e6bbf9b11ba833e/White%20Black%20Cute%20Minimalist%20and%20Elegant%20Toys%20Review%20Banner.png",
-    width=800 # Set a fixed width to make it smaller
+    width=True # Set a fixed width to make it smaller
 )
 
 #st.caption("As an affiliate, I may earn a commission from qualifying purchases.")
